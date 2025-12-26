@@ -15,8 +15,7 @@ app.get('/', (req, res) => {
   res.send('API is running 🚀');
 });
 
-// routes
-app.post('/send-email', mailRouter);
+// ✅ router-ը միացնում ենք use-ով
+app.use('/send-email', mailRouter);
 
-// ❌ ՉԿԱ app.listen
 export default app;

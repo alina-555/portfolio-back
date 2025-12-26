@@ -3,6 +3,7 @@ import mailController from "../controller/mail.js";
 
 const mailRouter = Router();
 
-mailRouter.post("/send-email",mailController.sendEmail)
+// ❗ այստեղ /send-email ՉԻ ԳՐՎՈՒՄ
+mailRouter.post('/', mailController.sendEmail);
 
 export default mailRouter;
